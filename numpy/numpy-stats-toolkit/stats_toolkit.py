@@ -5,6 +5,7 @@ def mean(x):
     count = x.size
     return (total/count)
 
+
 def population_variance(x):
     mean = np.mean(x)
     squared_diff = (x - mean) ** 2
@@ -16,3 +17,4 @@ def sample_variance(x):
     squared_diffs = (x - mean) ** 2
     variance = np.sum(squared_diffs) / (x.size - 1)
     return variance
+
